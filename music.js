@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on("guildMemberAdd", (member) => {
-    let channel = member.guild.channels.find('name', 'general-الشات-العام');
+    let channel = member.guild.channels.find('name', 'welcome');
     if (!channel) {
         console.log("!channel fails");
         return;
